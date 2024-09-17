@@ -1,4 +1,5 @@
-# graph-isomorphism-problem-ga
-graph-isomorphism-problem-ga
+# graph-coloring-problem-ga
 
-## graph-isomorphism-problem
+graph-coloring-problem-ga
+
+## graph-coloring-problem-ga
