@@ -1,1 +1,1 @@
-package selecter
+package selector
