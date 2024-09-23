@@ -11,6 +11,7 @@ type GA struct {
 	GAConfig
 	Population
 	Selector       Selector
+	Printer        Printer
 	BestIndividual Individual
 	PrintCallBack  func()
 }
@@ -28,12 +29,11 @@ type Population struct {
 	Generations uint
 }
 
-func NewGA(gaConfig GAConfig) *GA {
+func NewGA(gaConfig GAConfig, selector Selector, printer Printer) *GA {
 	return &GA{
 		GAConfig: gaConfig,
-		Selector: Tournament{
-			NContestants: 2,
-		},
+		Selector: selector,
+		Printer:  printer,
 	}
 }
 
